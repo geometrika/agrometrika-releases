@@ -176,23 +176,25 @@
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
-            background-color: var(--);
-            color: white;
+            background-color: var(--primary); /* Uses #40CC6C */
+            color: #ffffff !important;        /* Forces the text to stay white */
             font-weight: 700;
             padding: 1rem 2rem;
             border-radius: 0.75rem;
             text-decoration: none;
-            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+            /* Updated shadow matrix to support your brand new green color layout: */
+            box-shadow: 0 10px 15px -3px rgba(64, 204, 108, 0.4); 
             transition: all 0.2s ease;
             width: 100%;
             white-space: nowrap;
         }
 
         .btn-download:hover {
-            background-color: var(---hover);
+            background-color: var(--primary-hover); 
+            color: #ffffff !important;
             transform: translateY(-1px);
+            box-shadow: 0 20px 25px -5px rgba(64, 204, 108, 0.5);
         }
-
         .download-meta {
             font-size: 0.75rem;
             color: var(--text-muted);
